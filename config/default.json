@@ -9,5 +9,26 @@
     "default": 10,
     "max": 50
   },
-  "mongodb": "mongodb+srv://peace:GrBMV807MQnmJMJy@peace2074.1o4lzch.mongodb.net/?retryWrites=true&w=majority&appName=Peace2074"
+  "mongodb": "mongodb+srv://peace:GrBMV807MQnmJMJy@peace2074.1o4lzch.mongodb.net/?retryWrites=true&w=majority&appName=Peace2074",
+  "authentication": {
+    "entity": "user",
+    "service": "users",
+    "secret": "gYhtZ40iLfQf6xbxp+ZmTC35e0lTJXcl",
+    "authStrategies": [
+      "jwt",
+      "local"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  }
 }
