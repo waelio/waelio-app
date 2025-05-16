@@ -12,7 +12,7 @@ import type { BookmarksService } from './bookmarks.class'
 export const bookmarksSchema = Type.Object(
   {
     _id: ObjectIdSchema(),
-    text: Type.String()
+    text: Type.String(),
   },
   { $id: 'Bookmarks', additionalProperties: false }
 )

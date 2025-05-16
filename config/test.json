@@ -1,3 +1,5 @@
 {
-  "port": 8998
+  "port": 8998,
+   "email": "hello@feathersjs.com",
+  "password": "supersecret"
 }
